@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+  <title>Zennの2種類の執筆方法について</title>
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <a href="#"><img src="images/logo.png" alt=”zennロゴ” class="logo"></a>
+      <ul>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li>Log in</li>
+      </ul>
+    </header>
+
+    <main class="main">
+      <div class="account">
+        <a href="https://zenn.dev/zenn"><img src="images/9965dabc76.jpeg" alt="zennのアカウントロゴ">Zenn公式</a>
+      </div>
+
+      <div class="topic">
+        <button class="topic_btn">
+          目次
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </div>
+      <div class="like">
+        <button class="like_btn">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+      </div>
+
+      <div class="article_header">
+        <div class="article_title">
+          <img src="images/📝.svg" alt="記事タイトル画像">
+          <h1>Zennの2種類の執筆方法について</h1>
+        </div>
+        <div class="article_details">
+          <span>2020/09/06に公開</span>
+          <span>・</span>
+          <span>約1,200字</span>
+        </div>
+      </div>
+
+      <section class="blog">
+        <div class="article_tag">
+          <a href="https://zenn.dev/topics/zenn">
+            <img src="images/b52eac9e48.png" alt="zennタグロゴ">
+            <span>Zenn</span>
+          </a>
+          <a href="https://zenn.dev/tech-or-idea">
+            <img src="images/tech-icon.svg" alt="techタグロゴ">
+            <span>Tech</span>
+          </a>
+        </div>
+
+        <div class="article_body">
+          <p>このページではZennで記事や本を作成するときの執筆環境について紹介します。</p>
+          <h1>Zenn の執筆方法は 2 種類</h1>
+          <p>Zennのコンテンツは次のいずれかの方法で作成します。</p>
+          <h2>1. Webエディター</h2>
+          <img src="images/tb04ri7f5v9mdccsehi5jppvfpm3.png" alt="Zennのエディター">
+          <p>ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
+
+          <details>
+              <summary>ショートカットを使用しよう</summary>
+              <p>オンラインのmarkdownエディターでは、以下のショートカットを使用できます。</p>
+              <li><strong>Ctrl + P（プレビュー）</strong>：markdownがどのように表示されるかをチェックできます。もう一度ショートカットを実行すると、エディターに戻ります。</li>
+              <li><strong>Ctrl + S（内容の保存）</strong>：変更内容を保存します。</li>
+              <li><strong>Ctrl + I（埋め込み）</strong>：ツイートや YouTube、CodePen、SpeakerDeck などの埋め込みコンテンツを挿入するためのモーダルが表示されます。</li>
+              <p>※ Mac の場合はCtrlの代わりに⌘キーを使用します。</p>
+          </details>
+
+          <h2>2. ローカルのテキストエディター + CLI</h2>
+          <img src="images/n0tufad6ruthuy0j2hxhffg87hpz.png" alt="エディター">
+          <img src="images/ve1rve2rb3yvvcat974fxt2rftc1.png" alt="zenn_エディター">
+          <p>
+            自分の好きな環境で執筆したい方はGitHub <strong>リポジトリとの連携機能</strong>を利用することをおすすめします。
+            リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツがzenn.devに反映されるようになります。
+          </p>
+          <p>
+            📘
+            <a href="https://zenn.dev/zenn/articles/connect-to-github">
+              <strong>Zenn と GitHub リポジトリを連携する →</strong>
+            </a>
+          </p>
+          <p>
+            リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。
+            Zenn CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。
+          </p>
+
+          <p>
+            📘
+            <a href="https://zenn.dev/zenn/articles/install-zenn-cli">
+              <strong>Zenn CLI を導入する →</strong>
+            </a>
+          </p>
+
+          <hr>
+
+          <p>
+            オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。
+            具体的な記法は下記のリンク先をご覧ください。
+          </p>
+
+          <p>
+            📘
+            <a href="https://zenn.dev/zenn/articles/markdown-guide">
+              <strong>Zenn のmarkdown記法 →</strong>
+            </a>
+          </p>
+
+          
+            <p>
+              <i class="fa-brands fa-github"></i>
+              GitHubで編集を提案
+            </p>
+
+          <div class="like_container">
+            <div class="like">
+              <button class="like_btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span>81</span>
+              <span><i class="fa-solid fa-angle-down"></i></span>
+              <span><i class="fa-brands fa-twitter">ツイート</i></span>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="profile_container">
+            <div class="profile_info">
+              <a href="https://zenn.dev/zenn"><img src="images/9965dabc76.jpeg" alt="zennのアカウントロゴ"></a>
+              <a href="https://zenn.dev/zenn">Zenn公式</a>
+              <p>Zennの使い方や開発状況を発信する公式アカウントです。</p>
+            </div>
+          
+
+            <div class="sns">
+              <span>フォロー</span>
+              <a href="https://github.com/zenn-dev"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/zenn_dev"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="discussion_container">
+            <div class="discussion">
+              <h3><strong>Discussion</strong></h3>
+              <img src="images/discussion.png" alt="ディスカッション画像">
+            </div>
+
+            <hr>
+
+            <div class="discussion_login">
+              <p>ログインするとコメントできます</p>
+              <button class="btn_login">Login</button>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="read_next_container">
+
+        
+      </section>
+  
+
+
+
+
+
+
+
+
+
+Login
+Read next
+🔖
+Zennとdiff記法について
+kkiyama117
+kkiyama117
+2021/01/28
+55
+🐀
+GitHub ActionsでZennブログの校正を自動化してみた
+ユータ
+ユータ
+2021/03/27
+77
+📚
+zenn-cli + reviewdog + textlint + GitHub Actions で執筆体験を最高にする
+serima
+serima
+2020/09/29
+158
+🌟
+Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました
+koki
+koki
+2022/10/01
+162
+👩‍💻
+Next.js製 個人ブログに zenn-markdown-html と zenn-content-css を導入する
+Zenn Tech Blog
+waddy_u
+waddy_u
+in
+Zenn Tech Blog
+2021/05/28
+163
+🍜
+3分できる即席GitHubプロフィール
+t_keshi
+t_keshi
+2022/09/03
+243
+🧜‍♀️
+Zennが mermaid.js によるダイアグラム表記に対応したので試す
+Zenn Tech Blog
+waddy_u
+waddy_u
+in
+Zenn Tech Blog
+2021/06/08
+64
+🍣
+ZennのバッジをFastAPI+Vercelでお手軽に作る
+ganyariya
+ganyariya
+2021/01/13
+50
+📝
+4ステップでGithubからZennに記事を公開してみる(トラブルシューティング付き)
+オオバ@ohbashunsuke
+オオバ@ohbashunsuke
+2020/09/17
+46
+🚀
+Zenn の VSCode Web 拡張にプルリクエストしてみた
+PADAone🐕
+PADAone🐕
+5ヶ月前
+28
+    </main>
+
+    エンジニアのための情報共有コミュニティ
+
+About
+Zennについて
+運営会社
+お知らせ・リリース
+Guides
+使い方
+Publication
+よくある質問
+Links
+Twitter
+GitHub
+メディアキット
+Legal
+利用規約
+プライバシーポリシー
+特商法表記
+DevelopersIO 2023
+7.7(金)〜7.8(土) 開催決定
+Classmethod inc.
+  
+</body>
+</html>
