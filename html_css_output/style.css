@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*iPhon用*/
+
+.container {
+  display: grid;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 94px;
+  height: 22px;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  width: 15.7%;
+}
+
+
+.topic_btn {
+  background-color: inherit;
+  font-size: 14.5px;
+  color: #65717B;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+}
