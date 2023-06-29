@@ -12,28 +12,36 @@
   <div class="container">
 
     <header class="header">
-      <a href="#"><img src="images/logo.png" alt=”zennロゴ” class="logo"></a>
-      <ul>
-        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-        <li>Log in</li>
-      </ul>
+      <div class="header_container">
+        <a href="#">
+          <img src="images/logo.png" alt=”zennロゴ” class="logo">
+        </a>
+        <nav>
+          <ul>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><button class="btn_login" ><strong>Log in</strong></button></li>
+          </ul>
+      </nav>
+      </div>
     </header>
 
     <main class="main">
-      <div class="account">
-        <a href="https://zenn.dev/zenn"><img src="images/9965dabc76.jpeg" alt="zennのアカウントロゴ">Zenn公式</a>
-      </div>
+      <div class="account_content">
+        <div class="account">
+          <a href="https://zenn.dev/zenn"><img src="images/9965dabc76.jpeg" alt="zennのアカウントロゴ">Zenn公式</a>
+        </div>
 
-      <div class="topic">
-        <button class="topic_btn">
-          目次
-          <i class="fa-solid fa-angle-down"></i>
-        </button>
-      </div>
-      <div class="like">
-        <button class="like_btn">
-          <i class="fa-regular fa-heart"></i>
-        </button>
+        <div class="topic">
+          <button class="topic_btn">
+            目次
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+        <div class="like">
+          <button class="like_btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
       </div>
 
       <div class="article_header">
@@ -49,6 +57,24 @@
       </div>
 
       <section class="blog">
+        <div class="like_tweet">
+          <div class="like">
+            <button class="like_btn">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <span>81</span>
+          </div>
+          <div class="tweet">
+            <a href="https://twitter.com/intent/tweet?url=https://zenn.dev/zenn/articles/editor-guide&text=Zenn%E3%81%AE2%E7%A8%AE%E9%A1%9E%E3%81%AE%E5%9F%B7%E7%AD%86%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BD%9CZenn%E5%85%AC%E5%BC%8F&hashtags=zenn">
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span>ツイート</span>
+            </a>
+          </div>
+        </div>
+
+
+       
+
         <div class="article_tag">
           <a href="https://zenn.dev/topics/zenn">
             <img src="images/b52eac9e48.png" alt="zennタグロゴ">
@@ -166,113 +192,519 @@
           </div>
         </div>
       </section>
+
+
+      <div class="sidebar_container">
+        <div class="sidebar_article_details">
+          <dl>
+            <div class="sidebar_article_info">
+              <dt class="sidebar_article_info_dt">
+                <span class="article_info_icon">
+                  <i class="fa-regular fa-user"></i>
+                </span>
+                <span class="article_info_text">
+                  著者
+                </span>
+              </dt>
+              <dd class="article_info_user_dd">
+                <span class="article_info_user">
+                  <a href="https://zenn.dev/zenn">
+                    <img src="images/9965dabc76.jpeg" alt="Zenn公式">
+                    <span>Zenn公式</span>
+                  </a>
+                </span>
+              </dd>
+            </div>
+
+            <div class="sidebar_article_info">
+              <dt class="sidebar_article_info_dt">
+                <span class="article_info_icon">
+                  <i class="fa-regular fa-calendar"></i>
+                </span>
+                <span class="article_info_text">
+                  公開
+                </span>
+              </dt>
+              <dd class="article_info_user_dd">
+                <span class="article_info_user">
+                    2020/09/06
+                </span>
+              </dd>
+            </div>
+
+            <div class="sidebar_article_info">
+              <dt class="sidebar_article_info_dt">
+                <span class="article_info_icon">
+                  <i class="fa-solid fa-rotate-right"></i>
+                </span>
+                <span class="article_info_text">
+                  本文更新
+                </span>
+              </dt>
+              <dd class="article_info_user_dd">
+                <span class="article_info_user">
+                  <div class="update">
+                    <a href="https://github.com/zenn-dev/zenn-docs/commits/main?path=articles/editor-guide.md">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <span>2021/09/09</span>
+                  </div>
+                </span>
+              </dd>
+            </div>
+
+            <div class="sidebar_article_info">
+              <dt class="sidebar_article_info_dt">
+                <span class="article_info_icon">
+                  <i class="fa-regular fa-file"></i>
+                </span>
+                <span class="article_info_text">
+                  文章量
+                </span>
+              </dt>
+              <dd class="article_info_user_dd">
+                <span class="article_info_user">
+                  約1,200字
+                </span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="sidebar_profile_container">
+        <div class="user_profile_container">
+          <a href="https://zenn.dev/zenn">
+            <img src="images/9965dabc76.jpeg" alt="Zenn公式">
+          </a>
+          <div class="user_profile_name">
+            <a href="https://zenn.dev/zenn">Zenn公式</a>
+          </div>
+          <div class="user_profile_sns">
+            <button class="btn_follow">フォロー</button>
+            <a href="https://github.com/zenn-dev">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com/zenn_dev">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <p>
+          Zennの使い方や開発状況を発信する公式アカウントです。
+        </p>
+      </div>
+
+      <div class="sidebar_topic_container">
+        <strong>目次</strong>
+
+        <ol class="topic_list_1">
+          <li>
+            <a href="https://zenn.dev/zenn/articles/editor-guide#zenn-%E3%81%AE%E5%9F%B7%E7%AD%86%E6%96%B9%E6%B3%95%E3%81%AF-2-%E7%A8%AE%E9%A1%9E"><strong>Zenn の執筆方法は 2 種類</strong</a>
+            <ol class="topic_list_2">
+              <li>
+                <a href="https://zenn.dev/zenn/articles/editor-guide#1.-web%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%83%BC">Webエディター</a>
+              </li>
+              <li>
+                <a href="https://zenn.dev/zenn/articles/editor-guide#2.-%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AE%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%83%BC-%2B-cli">ローカルのテキストエディター+ CLI</a>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+
+
+
       
 
       <section class="read_next_container">
+        <h1>Read next</h1>
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/kkiyama117/articles/2021-01-25-markdown-diff-unified">
+              <img src="images/🔖.svg" alt="🔖">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/kkiyama117/articles/2021-01-25-markdown-diff-unified">
+              <h2>Zennとdiff記法について</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/kkiyama117">
+                <img src="images/unnamed.jpg" alt="kkiyama117">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/kkiyama117">kkiyama117</a>
+              </div>
+              <div class="item_date">
+                <span>2021/01/28</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  55
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
 
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/yuta28/articles/blog-lint-ci-reviewdog">
+              <img src="images/🐀.svg" alt="🐀">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/yuta28/articles/blog-lint-ci-reviewdog">
+              <h2>GitHub ActionsでZennブログの校正を自動化してみた</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/yuta28">
+                <img src="images/fb4d583c3c.jpeg" alt="ユータ">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/yuta28">ユータ</a>
+              </div>
+              <div class="item_date">
+                <span>2021/03/27</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  77
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b">
+              <img src="images/📚.svg" alt="📚">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b">
+              <h2>zenn-cli + reviewdog + textlint + GitHub Actions で執筆体験を最高にする</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/serima">
+                <img src="images/7a2cacc0df.jpeg" alt="serima">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/serima">serima</a>
+              </div>
+              <div class="item_date">
+                <span>2020/09/29</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  158
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/kou_pg_0131/articles/badge-generator-introduction">
+              <img src="images/🌟.svg" alt="🌟">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/kou_pg_0131/articles/badge-generator-introduction">
+              <h2>Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/kou_pg_0131">
+                <img src="images/unnamed (1).jpg" alt="koki">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/kou_pg_0131">koki</a>
+              </div>
+              <div class="item_date">
+                <span>2022/10/01</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  162
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
         
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/team_zenn/articles/intro-zenn-markdown">
+              <img src="images/👩_💻.svg" alt="👩_💻">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/team_zenn/articles/intro-zenn-markdown">
+              <h2>Next.js製 個人ブログに zenn-markdown-html と zenn-content-css を導入する</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/p/team_zenn">
+                <img src="images/6399678e6b.png" alt="blog_icon">
+              </a>
+              <a href="https://zenn.dev/waddy">
+                <img src="images/ab27ada047.png" alt="waddy_u">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/waddy">waddy_u</a>
+                <span>in</span>
+                <a href="https://zenn.dev/p/team_zenn">Zenn Tech Blog</a>
+              </div>
+              <div class="item_date">
+                <span>2021/05/28</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  163
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/t_keshi/articles/instant-github-profile">
+              <img src="images/🍜.svg" alt="🍜">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/t_keshi/articles/instant-github-profile">
+              <h2>3分できる即席GitHubプロフィール</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/t_keshi">
+                <img src="images/0614c6d47f.jpeg" alt="t_keshi">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/t_keshi">t_keshi</a>
+              </div>
+              <div class="item_date">
+                <span>2022/09/03
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  243
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/team_zenn/articles/zenn-mermaid-js">
+              <img src="images/🧜_♀️.svg" alt="🧜‍♀️">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/team_zenn/articles/zenn-mermaid-js">
+              <h2>Zennが mermaid.js によるダイアグラム表記に対応したので試す</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/p/team_zenn">
+                <img src="images/6399678e6b.png" alt="blog_icon">
+              </a>
+              <a href="https://zenn.dev/waddy">
+                <img src="images/ab27ada047.png" alt="waddy_u">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/waddy">waddy_u</a>
+                <span>in</span>
+                <a href="https://zenn.dev/p/team_zenn">Zenn Tech Blog</a>
+              </div>
+              <div class="item_date">
+                <span>2021/06/08</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  64
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/ganariya/articles/zenn-badge-fastapi-vercel">
+              <img src="images/🍣.svg" alt="🍣">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/ganariya/articles/zenn-badge-fastapi-vercel">
+              <h2>ZennのバッジをFastAPI+Vercelでお手軽に作る</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/ganariya">
+                <img src="images/36164a7e66.jpeg" alt="ganyariya">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/ganariya">ganyariya</a>
+              </div>
+              <div class="item_date">
+                <span>2021/01/13</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  50
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/ohbashunsuke/articles/20200917001-deploy-with-github">
+              <img src="images/📝.svg" alt="📝">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/ohbashunsuke/articles/20200917001-deploy-with-github">
+              <h2>4ステップでGithubからZennに記事を公開してみる(トラブルシューティング付き)</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/ohbashunsuke">
+                <img src="images/2fdbf43e75.jpeg" alt="オオバ@ohbashunsuke">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/ohbashunsuke">オオバ@ohbashunsuke</a>
+              </div>
+              <div class="item_date">
+                <span>2020/09/17</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  46
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="read_item">
+          <div class="item_img"></div>
+            <a href="https://zenn.dev/estra/articles/prs-for-zenn-vscode-ext">
+              <img src="images/🚀.svg" alt="🚀">
+            </a>
+          </div>
+          <div class="articlelist_container">
+            <a href="https://zenn.dev/estra/articles/prs-for-zenn-vscode-ext">
+              <h2>Zenn の VSCode Web 拡張にプルリクエストしてみた</h2>
+            </a>
+          </div>
+          <div class="item_user">
+            <div class="user_img">
+              <a href="https://zenn.dev/estra">
+                <img src="images/7f05673c72.jpeg" alt="PADAone🐕">
+              </a>
+            </div>
+            <div class="user_info">
+              <div class="user_name">
+                <a href="https://zenn.dev/estra">PADAone🐕</a>
+              </div>
+              <div class="item_date">
+                <span>5ヶ月前</span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                  28
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
-  
-
-
-
-
-
-
-
-
-
-Login
-Read next
-🔖
-Zennとdiff記法について
-kkiyama117
-kkiyama117
-2021/01/28
-55
-🐀
-GitHub ActionsでZennブログの校正を自動化してみた
-ユータ
-ユータ
-2021/03/27
-77
-📚
-zenn-cli + reviewdog + textlint + GitHub Actions で執筆体験を最高にする
-serima
-serima
-2020/09/29
-158
-🌟
-Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました
-koki
-koki
-2022/10/01
-162
-👩‍💻
-Next.js製 個人ブログに zenn-markdown-html と zenn-content-css を導入する
-Zenn Tech Blog
-waddy_u
-waddy_u
-in
-Zenn Tech Blog
-2021/05/28
-163
-🍜
-3分できる即席GitHubプロフィール
-t_keshi
-t_keshi
-2022/09/03
-243
-🧜‍♀️
-Zennが mermaid.js によるダイアグラム表記に対応したので試す
-Zenn Tech Blog
-waddy_u
-waddy_u
-in
-Zenn Tech Blog
-2021/06/08
-64
-🍣
-ZennのバッジをFastAPI+Vercelでお手軽に作る
-ganyariya
-ganyariya
-2021/01/13
-50
-📝
-4ステップでGithubからZennに記事を公開してみる(トラブルシューティング付き)
-オオバ@ohbashunsuke
-オオバ@ohbashunsuke
-2020/09/17
-46
-🚀
-Zenn の VSCode Web 拡張にプルリクエストしてみた
-PADAone🐕
-PADAone🐕
-5ヶ月前
-28
     </main>
 
-    エンジニアのための情報共有コミュニティ
-
-About
-Zennについて
-運営会社
-お知らせ・リリース
-Guides
-使い方
-Publication
-よくある質問
-Links
-Twitter
-GitHub
-メディアキット
-Legal
-利用規約
-プライバシーポリシー
-特商法表記
-DevelopersIO 2023
-7.7(金)〜7.8(土) 開催決定
-Classmethod inc.
-  
+    <footer>
+      <div class="footer">
+        <div class="footer_container">
+          <div class="zenn_footer">
+            <a href="https://zenn.dev/">
+              <img src="images/logo.png" alt="zennロゴ">
+            </a>
+            <p class="zenn_footer_introduction">
+              エンジニアのための<br aria-hidden="true">
+              情報共有コミュニティ
+            </p>
+          </div>
+          <div class="footer_contents_container">
+            <nav>
+              <h4>About</h4>
+              <ul class="footer_item">
+                <li><a href="https://zenn.dev/about">Zennについて</a></li>
+                <li><a href="https://classmethod.jp/">運営会社</a></li>
+                <li><a href="https://info.zenn.dev/">お知らせ・リリース</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <h4>Guides</h4>
+              <ul class="footer_item">
+                <li><a href="https://zenn.dev/zenn">使い方</a></li>
+                <li><a href="https://zenn.dev/publications">Publication</a></li>
+                <li><a href="https://zenn.dev/faq">よくある質問</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <h4>Links</h4>
+              <ul class="footer_item">
+                <li><a href="https://twitter.com/zenn_dev">Twitter</a></li>
+                <li><a href="https://github.com/zenn-dev">GitHub</a></li>
+                <li><a href="https://zenn.dev/mediakit">メディアキット</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <h4>Legal</h4>
+              <ul class="footer_item">
+                <li><a href="https://zenn.dev/terms">利用規約</a></li>
+                <li><a href="https://zenn.dev/privacy">プライバシーポリシー</a></li>
+                <li><a href="https://zenn.dev/terms/transaction-law">特商法表記</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="copyright_space"></div>
+        <div class="footer_copyright">
+          <a href="https://classmethod.jp/"><img src="images/classmethod-logo-small.svg" alt="classmethodロゴ"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
