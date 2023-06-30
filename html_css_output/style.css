@@ -281,7 +281,30 @@ hr {
 
 
 
-
 .discussion_container {
+  background-color: #FFFFFF;
+  width: 100%;
   border-top: 2px solid #edf2f7;
+}
+
+.discussion {
+  text-align: center;
+  padding: 33.6px 0;
+}
+
+.discussion img {
+  width: 100%;
+}
+
+.discussion_login {
+  text-align: center;
+  color: #93a5b1;
+}
+
+ .btn_login {
+  background-color: #3ea8ff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
 }
