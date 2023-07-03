@@ -257,6 +257,76 @@ hr {
   color: #93a5b1;
 }
 
+.View_authorInfo__O6Xhw {
+  padding-top: 2rem;
+  border-top: 1px solid #5c93bb2b;
+}
+
+.ProfileCard_container__C7toa {
+  position: relative;
+  min-height: 60px
+}
+
+.ProfileCard_avatar__yI2q3 {
+  width: 60px;
+  height: 60px;
+}
+
+.AvatarImage_plain__BCJNs {
+  display: block;
+  flex-shrink: 0;
+  height: auto;
+  font-size: 11px;
+  border-radius: 99rem;
+}
+
+.ProfileCard_name__ufo2s {
+  line-height: 1.4;
+}
+
+.ProfileCard_displayName__bHra8 {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #000000d1;
+}
+
+.ProfileCard_content__Mt5Fz {
+  margin-top: 0.7rem;
+  font-size: .93rem;
+  line-height: 1.6;
+  color: #65717b;
+}
+
+.Paragraph_sidenote__MnaJg {
+  font-size: .9rem;
+  line-height: 1.7;
+}
+
+.ProfileCard_actions__MFv5j {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.ProfileCard_follow__kI69V {
+  margin-right: 1.2rem;
+}
+
+.ButtonFollow_button__BMHcC.style-small {
+  width: 82px;
+  height: 30px;
+  font-size: 12.5px;
+}
+
+.ProfileCard_link__jGmrk {
+  display: inline-flex;
+  margin-right: 1rem;
+  color: #65717b;
+}
+
 .profile_container {
   display: flex;
   padding-top: 32px;
