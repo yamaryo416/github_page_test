@@ -1,1 +1,90 @@
 @charset "UTF-8";
+/* iphonおよび共通設定 */
+html{
+  font-size: 100%;
+}
+
+body {
+  font-family: heisei-maru-gothic-std, a-otf-midashi-mi-ma31-pr6n, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+
+/* header */
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+
+.header_container h1 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #384151;
+  color: #fff;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 30px;
+  list-style: none;
+}
+
+#main_image {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/1920x1280.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* main */
+.introduction {
+  padding: 40px;
+}
+
+.introduction h2 {
+  border-bottom: 1px solid #000;
+  width: 100px;
+  margin: 50px auto;
+}
+
+.user_info {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+}
+
+.introduction h3 {
+  margin-bottom: 5px;
+  grid-column: 1;
+}
+
+.introduction p {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.introduction img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
