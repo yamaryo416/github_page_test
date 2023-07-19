@@ -35,15 +35,18 @@ img {
   padding-right: 15px;
   background-color: #384151;
   color: #fff;
+  flex-shrink: 0;
 }
 
 .header nav ul {
   display: flex;
+  gap: 30px;
+  padding: 0;
 }
 
 .header nav ul li {
-  margin-left: 30px;
   list-style: none;
+  flex-shrink: 0;
 }
 
 #main_image {
