@@ -46,14 +46,23 @@ else
   print "   " * (month_start_day.wday - 1)
 end
 
+# (month_start_day..month_last_day).each do |d|
+#   if d.wday == 0 && d.day <= 9
+#     puts " #{d.day} "
+#   elsif d.wday == 0
+#     puts "#{d.day} "
+#   elsif d.day <= 9
+#     print " #{d.day} "
+#   else
+#     print "#{d.day} "
+#   end
+# end
+
 (month_start_day..month_last_day).each do |d|
-  if d.wday == 0 && d.day <= 9
-    puts " #{d.day} "
-  elsif d.wday == 0
-    puts "#{d.day} "
-  elsif d.day <= 9
-    print " #{d.day} "
+  if d.wday == 0
+    puts d.day.to_s.rjust(2)
   else
-    print "#{d.day} "
+    print d.day.to_s.rjust(2)
+    print ' '
   end
 end
