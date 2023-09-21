@@ -15,6 +15,14 @@
 # 規定打数5で1打だった場合のみ該当(1打だが今回はホールインワンとはしない)
 # ホールインワン:1打で入れた場合
 
+SCORE_LIST = {
+  1 => "ボギー",
+  0 => "パー",
+  -1 => "バーディー",
+  -2 => "イーグル",
+  -3 => "アルバトロス",
+  -4 => "コンドル",
+}
 
 # 規定打数とプレイヤー打数の数値を受け取る
 x = gets.chomp.split(",").map(&:to_i) # 規定打数
@@ -28,32 +36,40 @@ scores = []
 
 y.each_with_index do |player, index|
   diff = player - x[index]
-  case diff
-  when 1
-    scores << "ボギー"
-  when 0
-    scores << "パー"
-  when -1
-    scores << "バーディー"
-  when -2
-    if player == 1 && x[index] == 3
+    if player == 1 && [3,4].include?(x[index])
       scores << "ホールインワン"
+    elsif diff >= 2
+      scores << "#{diff}ボギー"
     else
-      scores << "イーグル"
+      scores << SCORE_LIST[diff]
     end
-  when -3
-    if player == 1 && x[index] == 4
-      scores << "ホールインワン"
-    else
-      scores << "アルバトロス"
-    end
-  when -4
-      scores << "コンドル"
-  else
-    diff >= 2
-    scores << "#{diff}ボギー"
   end
+
+# case diff
+#   when 1
+#     scores << "ボギー"
+#   when 0
+#     scores << "パー"
+#   when -1
+#     scores << "バーディー"
+#   when -2
+#     if player == 1 && x[index] == 3
+#       scores << "ホールインワン"
+#     else
+#       scores << "イーグル"
+#     end
+#   when -3
+#     if player == 1 && x[index] == 4
+#       scores << "ホールインワン"
+#     else
+#       scores << "アルバトロス"
+#     end
+#   when -4
+#       scores << "コンドル"
+#   else
+#     scores << "#{diff}ボギー"
+#   end
   
-end
+# end
 
 p scores.join(',')
