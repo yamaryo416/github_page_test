@@ -15,23 +15,20 @@
 # 規定打数5で1打だった場合のみ該当(1打だが今回はホールインワンとはしない)
 # ホールインワン:1打で入れた場合
 
-scores = []
+
 # 規定打数とプレイヤー打数の数値を受け取る
 x = gets.chomp.split(",").map(&:to_i) # 規定打数
 y = gets.chomp.split(",").map(&:to_i) # プレーヤー打数
 
-p x
-p y
+
 # 各ホールのスコアを計算する
 # x,yの2つの引き数を繰り返し取り出して処理をする
 # diffを出してその値をスコアに変換してscoresで表示する
+scores = []
+
 y.each_with_index do |player, index|
   diff = player - x[index]
   case diff
-  when 3
-    scores << "3ボギー"
-  when 2
-    scores << "2ボギー"
   when 1
     scores << "ボギー"
   when 0
@@ -52,6 +49,9 @@ y.each_with_index do |player, index|
     end
   when -4
       scores << "コンドル"
+  else
+    diff >= 2
+    scores << "#{diff}ボギー"
   end
   
 end
