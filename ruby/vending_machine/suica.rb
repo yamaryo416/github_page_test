@@ -21,9 +21,10 @@ class Suica
   end
 
   # Suicaの残高を取得する
-  def get_current_balance
-    @balance
-  end
+  # attr_readerを使用しているので必要ない
+  # def get_current_balance
+  #   @balance
+  # end
 
   # Suicaのチャージ残高から支払いをする(Suicaの残高が足りない場合はエラー)
   def pay(amount)
@@ -36,13 +37,5 @@ class Suica
 
 end
 
-
-suica = Suica.new
-
-# 100円のチャージ
-puts suica.balance_charge(100)
-
-# 100円以下のチャージ
-# puts suica.balance_charge(80)
 
 
