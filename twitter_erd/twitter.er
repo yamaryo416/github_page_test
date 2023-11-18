@@ -1,0 +1,76 @@
+[users]{bgcolor:"#d0e0d0"}
+*id {label: "integer, not null"}
+email {label: "varchar(100), not null, uniq"}
+user_name{label: "varchar(100), uniq"}
+phone_number{label: "integer, uniq"}
+display_name{label: "varchar(100)"}
+introduction{label: "varchar(200)"}
+place{label: "varchar(100)"}
+web_site{label: "varchar(100)"}
+birth{label: "date"}
+profile_image{label: "blob"}
+avatar_image{label: "blob"}
+created_at{label: "datetime, not null"}
+updated_at{label: "datetime, not null"}
+
+
+[tweets]{bgcolor: "#d0e0d0"}
+*id {label: "integer, not null"}
+user_id{label: "integer, not null, FK(users)"}
+content{label: "varchar(140), not null"}
+created_at{label: "datetime, not null"}
+updated_at{label: "datetime, not null"}
+
+[favorites]{bgcolor: "#d0e0d0"}
+*id{label: "integer, not null"}
+tweet_id{label: "integer, not null, FK(tweets)"}
+user_id{label: "integer, not null, FK(users)"}
+created_at{label: "datetime, not null"}
+updated_at{label: "datetime, not null"}
+
+[retweets]{bgcolor: "#d0e0d0"}
+*id{label: "integer, not null"}
+tweet_id{label: "integer, not null, FK(tweets)"}
+user_id{label: "integer, not null, FK(users)"}
+created_at{label: "datetime, not null"}
+updated_at{label: "datetime, not null"}
+
+[bookmarks]{bgcolor: "#d0e0d0"}
+*id{label: "integer, not null"}
+tweet_id{label: "integer, not null, FK(tweets)"}
+user_id{label: "integer, not null, FK(users)"}
+created_at{label: "datetime, not null"}
+updated_at{label: "datetime, not null"}
+
+[follows]{bgcolor: "#d0e0d0"}
+*id{label: "integer, not null"}
+follow_user_id{label: "integer, not null, FK(users)"}
+follower_user_id{label: "integer, not null, FK(users)"}
+created_at{label: "datetime, not null"}
+updated_at{label: "datetime, not null"}
+
+[direct_messages]{bgcolor: "#d0e0d0"}
+*id{label: "integer, not null"}
+from_user_id{label: "integer, not null, FK(users)"}
+to_user_id{label: "integer, not null, FK(users)"}
+message{label: "varchar(1000), not null"}
+created_at{label: "datetime, not null"}
+updated_at{label: "datetime, not null"}
+
+# Cardinality    Syntax
+# 0 or 1         ?
+# exactly 1      1
+# 0 or more      *
+# 1 or more      +
+
+users 1--* 'tweets'
+users 1--* 'favorites'
+users 1--* 'retweets'
+users 1--* 'bookmarks'
+users 1--* 'follows'
+users 1--* 'direct_messages'
+
+tweets 1--* 'favorites'
+tweets 1--* 'retweets'
+tweets 1--* 'bookmarks'
+
