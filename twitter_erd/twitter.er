@@ -44,7 +44,7 @@ updated_at{label: "datetime, not null"}
 
 [follows]{bgcolor: "#d0e0d0"}
 *id{label: "integer, not null"}
-follow_user_id{label: "integer, not null, FK(users)"}
+followee_user_id{label: "integer, not null, FK(users)"}
 follower_user_id{label: "integer, not null, FK(users)"}
 created_at{label: "datetime, not null"}
 updated_at{label: "datetime, not null"}
