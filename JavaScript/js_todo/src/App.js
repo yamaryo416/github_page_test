@@ -61,6 +61,10 @@ export class App {
         this.todoListModel.emitChange();
     }
 
+    getCompletedTodoCount(todoItems) {
+      return todoItems.filter(todo => todo.completed).length;
+    }
+
     createTodoItemElement(todoItem) {
         const todoItemElement = document.createElement('li');
         todoItemElement.textContent = todoItem.title;
