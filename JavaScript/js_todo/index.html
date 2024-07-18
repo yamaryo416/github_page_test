@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Todo App</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header>
+    <h1>JS Todo App</h1>
+  </header>
+  <main>
+    <form id="js-todo-create-form">
+      <input
+        id="js-todo-create-input"
+        class="todo-create"
+        type="text"
+        placeholder="TODOを入力してください"
+        autocomplete="off"
+      />
+      <button type="submit">保存</button>
+    </form>
+    <div id="js-todo-container" class="todo-list"></div>
+  </main>
+  <footer>
+    <div>
+      <span id="js-todo-all-count">全てのタスク:0</span><br>
+      <span id="js-todo-completed-count">完了済み:0</span><br>
+      <span id="js-todo-incompleted-count">未完了:0</span>
+    </div>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
