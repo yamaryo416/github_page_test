@@ -9,7 +9,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom, rgb(231, 157, 238),rgb(135, 233, 126));
 }
 
 header {
@@ -30,12 +29,15 @@ header {
   width: 15rem;
   height: 1.7rem;
   padding: 0.5rem;
-  border: none;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .inputForm button {
   padding: 0.38rem 0.5rem;
-  background: rgb(243, 240, 84);
+  background: #b0c4de;
+  border-radius: 5px;
 }
 
 .todoList {
@@ -61,18 +63,20 @@ header {
   min-width: 15rem;
   max-height: 1.8rem;
   padding: 0.3rem 4rem;
-  background: white;
 }
 
 
 .icons .edit {
   padding: 0.487rem .5rem;
   background: rgb(83, 164, 195);
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .icons .delete {
   padding: 0.487rem .5rem;
   background: rgb(197, 70, 81);
+  border-radius: 5px;
 }
 
 .todoText {
