@@ -34,10 +34,11 @@ header {
   margin: 10px;
 }
 
-.inputForm button {
+.inputForm button, .save {
   padding: 0.38rem 0.5rem;
   background: #b0c4de;
   border-radius: 5px;
+  margin: 5px;
 }
 
 .todoList {
@@ -81,13 +82,19 @@ header {
 
 .todoText {
   min-width: 15rem;
-  max-height: 1.8rem;
-  padding: 0.3rem 4rem;
   background: white;
 }
 
-
+.todoText .inputEdit {
+  width: 15rem;
+  height: 1.7rem;
+  padding: 0.5rem;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  margin: 10px;
+}
 
 button {
   border: none;
 }
+
