@@ -33,7 +33,7 @@ export const TodoList = ({taskList, setTaskList}) => {
       setTaskList(taskList.filter((task) => task.id !== id));
     }
   };
-  
+
   const handleCompleted = (id) => {
     // 完了か未完了かを判断する
     const updatedTaskList = taskList.map((task) => {
@@ -48,6 +48,11 @@ export const TodoList = ({taskList, setTaskList}) => {
     setTaskList(updatedTaskList);
     localStorage.setItem('taskList', JSON.stringify(updatedTaskList));
   };
+
+  // タスクの集計を行う
+  const totalTasks = taskList.length;
+  const completedTasks = taskList.filter((task) => task.completed).length;
+  const incompleteTasks = totalTasks - completedTasks;
 
   return (
     <div className="todoList">
@@ -88,6 +93,12 @@ export const TodoList = ({taskList, setTaskList}) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="taskSummary">
+        <p>全てのタスク: {totalTasks}<br />
+          完了済み: {completedTasks}<br />
+          未完了: {incompleteTasks}<br />
+        </p>
       </div>
     </div>
   );

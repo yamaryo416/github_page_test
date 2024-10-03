@@ -98,3 +98,6 @@ button {
   border: none;
 }
 
+.taskSummary {
+  text-align: center;
+}
