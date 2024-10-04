@@ -23,7 +23,7 @@ export const TodoList = ({taskList, setTaskList}) => {
     });
     setTaskList(updatedTaskList);
     setEditingTask(null);
-    localStorage.setItem('taskList', JSON.stringify(updatedTaskList));
+    
   };
 
 
