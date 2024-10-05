@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hc_practice/react/react_todo_list/static/css/main.42ab04ae.css",
-    "main.js": "/hc_practice/react/react_todo_list/static/js/main.0135d674.js",
-    "static/js/453.411fdc73.chunk.js": "/hc_practice/react/react_todo_list/static/js/453.411fdc73.chunk.js",
-    "index.html": "/hc_practice/react/react_todo_list/index.html",
-    "main.42ab04ae.css.map": "/hc_practice/react/react_todo_list/static/css/main.42ab04ae.css.map",
-    "main.0135d674.js.map": "/hc_practice/react/react_todo_list/static/js/main.0135d674.js.map",
-    "453.411fdc73.chunk.js.map": "/hc_practice/react/react_todo_list/static/js/453.411fdc73.chunk.js.map"
+    "main.css": "/github_page_test/react/react_todo_list/static/css/main.42ab04ae.css",
+    "main.js": "/github_page_test/react/react_todo_list/static/js/main.5a528492.js",
+    "static/js/453.411fdc73.chunk.js": "/github_page_test/react/react_todo_list/static/js/453.411fdc73.chunk.js",
+    "index.html": "/github_page_test/react/react_todo_list/index.html",
+    "main.42ab04ae.css.map": "/github_page_test/react/react_todo_list/static/css/main.42ab04ae.css.map",
+    "main.5a528492.js.map": "/github_page_test/react/react_todo_list/static/js/main.5a528492.js.map",
+    "453.411fdc73.chunk.js.map": "/github_page_test/react/react_todo_list/static/js/453.411fdc73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.42ab04ae.css",
-    "static/js/main.0135d674.js"
+    "static/js/main.5a528492.js"
   ]
 }
